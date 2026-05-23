@@ -1,10 +1,15 @@
 # Sudoku solver
 
-Wwlocome in sudoku solver
+This sudoku solver can solve any sudoku (if it valid) under 90 seconds!
+Time table:
 
-This sudoku solver can solve any sudoku (if it makes sense) under 90 seconds!
-Clasic sudokus don´t take even a second, the sudokus ,,hardest sudokus of the world" often take only about 5 seconds. The 17-clues sudokus can sometimes take up to  seconds but that´s very unlikely to happen
+Classic sudokus: < 1 second
+World hardest sudokus: < 5 seconds
+17-clues sudoku: < 30 seconds
+
+In some rare cases ultra-hard sudokos can take up to 90 seconds, but this should be fixed with version threadripper_v3
+
 
 All code wrote in python
 
-Method: Bactracking with 8 threads trying to slove it form different sides and mirrors
+Method: Bactracking with 8 threads racing to solve it form different sides and mirrors
