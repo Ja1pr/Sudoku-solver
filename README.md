@@ -8,6 +8,7 @@ Classic sudokus: < 1 second
 —————————————————————————————————————————
 
 World hardest sudokus: < 5 seconds
+—————————————————————————————————————————
 
 
 17-clues sudoku: < 30 seconds
