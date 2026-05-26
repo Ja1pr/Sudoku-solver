@@ -3,15 +3,17 @@
 This sudoku solver can solve any sudoku (if it is valid) under 90 seconds!
 Time table:
 
-Classic sudokus      | < 1 second 
+Classic sudokus             | < 1 second 
                      
 —————————————————————————————————————————
 
-World hardest sudokus| < 5 seconds
+World hardest sudokus.      | < 5 seconds
 —————————————————————————————————————————
 
 
-17-clues sudokus     | < 30 seconds
+17-clues sudokus           | < 30 seconds
+
+
 
 In some rare cases ultra-hard sudokos can take up to 90 seconds, but this should be fixed with newest version
 
