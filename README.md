@@ -5,13 +5,13 @@ Time table:
 
 Classic sudokus................ < 1 second 
                      
-—————————————————————————————————————————
+
 
 World hardest sudokus.... < 5 seconds
-—————————————————————————————————————————
 
 
-17-clues sudokus........... < 30 seconds
+
+17-clues sudokus............ < 30 seconds
 
 
 
