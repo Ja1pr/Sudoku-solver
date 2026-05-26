@@ -5,7 +5,7 @@ Time table:
 
 Classic sudokus: < 1 second 
 
-
+————————————————————————————————————————————————
 World hardest sudokus: < 5 seconds
 
 
