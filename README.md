@@ -7,7 +7,7 @@ Classic sudokus.............| < 1 second
                      
 —————————————————————————————————————————
 
-World hardest sudokus.......| < 5 seconds
+World hardest sudokus....| < 5 seconds
 —————————————————————————————————————————
 
 
