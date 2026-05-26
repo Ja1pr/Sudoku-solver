@@ -1,6 +1,6 @@
 # Sudoku solver
 
-This sudoku solver can solve any sudoku (if it valid) under 90 seconds!
+This sudoku solver can solve any sudoku (if it is valid) under 90 seconds!
 Time table:
 
 Classic sudokus: < 1 second
