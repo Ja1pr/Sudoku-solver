@@ -2,6 +2,7 @@ import math
 
 #               Note
 # This code is almost 100% made by human
+#WARNING - This code is compatible only with frontend threadripper.py (and it´s versions)
 
 
 class SudokuSolver:
