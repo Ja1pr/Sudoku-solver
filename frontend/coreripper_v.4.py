@@ -1,4 +1,4 @@
-from Solver_better import SudokuSolver
+from Solver_v2 import SudokuSolver # or use any Sovler version that is compatible: Solver_v2.py and Solver_v3
 import tkinter as tk
 import multiprocessing
 import time
