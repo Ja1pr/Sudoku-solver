@@ -1,6 +1,6 @@
 # Sudoku solver
 
-!SOLVER v3 was not yet translated into .exe! Id you want to use newst version, you have to use the .px
+!SOLVER v3 was not yet translated into .exe! If you want to use newst version, you have to use the .px
 
 New version of Solver that uses MRV to be more effective and faster
 
