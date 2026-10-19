@@ -1,24 +1,29 @@
-# Sudoku solver
+# Sudoku Solver
 
-!SOLVER v3 was not yet translated into .exe! If you want to use newst version, you have to use the .px
+A fast Python sudoku solver that handles everything from classic puzzles to the hardest known grids, typically in well under 5 seconds.
 
-New version of Solver that uses MRV to be more effective and faster
+> **Note:** Solver v3 has not been compiled into an `.exe` yet. To use the newest version, run the `.py` file directly.
 
-This sudoku solver can solve any sudoku (if it is valid) under 5 seconds!
-Time table:
+## What's new in v3
+- **MRV heuristic** (Minimum Remaining Values): always fills the cell with the fewest candidates first, which prunes the search tree dramatically.
+- **Better handling of unsolvable puzzles**: invalid grids are detected and rejected instead of getting the solver stuck, as happened in older versions.
+- **Ultra-hard puzzles** that could previously take up to 30 seconds should now be solved much faster.
 
-Classic sudokus................ < 1 second (this reamined unchanged across versions)
-                     
-World hardest sudokus.... < 1 seconds 
+## Performance
 
+| Puzzle type            | v1       | v2       | v3 (current) |
+|------------------------|----------|----------|--------------|
+| Classic sudokus        | < 1 s    | < 1 s    | < 1 s        |
+| World's hardest sudokus| –        | –        | < 1 s        |
+| 17-clue sudokus        | ~30 s    | ~7 s     | < 1 s        |
+| Unsolvable sudokus     | may hang | –        | handled quickly |
 
-17-clues sudokus............. < 1 seconds (major upgrade, version 2: 7 seconds,  version 1: 30 second)
+Any valid sudoku is solved in under 5 seconds.
 
-unsolvable sudokus - This new version handles them really well, while older vesions could get stuck
+## How it works
+The solver uses **backtracking with MRV**, running **8 parallel processes** (one per core). Each process attacks the puzzle from a different direction (original grid and mirrored/rotated variants), and the first one to find a solution wins and stops the others.
 
-In some rare cases ultra-hard sudokos can take up to 30 seconds, but this should be fixed with newest version
+## Tech
+- Language: Python (100 %)
+- Parallelism: multiprocessing (8 workers)
 
-
-All code wrote in python
-
-Method: Bactracking with 8 cores racing to solve it form different sides and mirrors and MRV
